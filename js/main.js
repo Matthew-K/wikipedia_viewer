@@ -54,7 +54,8 @@ var view = {
 	},
 
 	createSearchHandler: function(){
-		$("#search").on("click",function(){
+
+		$("#searchButton").on("click",function(){
 			var searchTerm = $("#searchTerm").val();
 			controller.search(searchTerm);
 		});
