@@ -1,3 +1,7 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
 body{
 	background: #D1FAE5;
 }
@@ -7,7 +11,8 @@ body{
 }
 
 h1{
-	font-size: 55px;
+	font-size: 60px;
+	font-family: 'Alegreya SC', serif;
 }
 
 .title{
@@ -57,6 +62,8 @@ h1{
 	border-bottom: 2px solid #FFCCBC;
 	padding-bottom: 20px;
 	margin-top: 25px;
+	font-size: 1.1em;
+	
 }
 
 .result:last-child{
