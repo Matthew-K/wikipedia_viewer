@@ -48,18 +48,30 @@ h1{
 	  outline: none;
 }
 
-.simplebox {
-  outline: none;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
+#results{
+	background: #fff;
 }
 
 .result{
 	background: #fff;
+	border-bottom: 2px solid #FFCCBC;
+	padding-bottom: 20px;
+	margin-top: 25px;
 }
 
+.result:last-child{
+	border-bottom: 0;
+}
 
+#results a{
+	color: #087F43;
+	font-weight:;
+}
+
+.footer{
+	color: #fff;
+	background: #FFB199;
+	height: 25px;
+}
 
 
