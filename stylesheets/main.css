@@ -6,12 +6,6 @@ body{
 	max-width: 720px;
 }
 
-.centerVert{
-	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
-}
-
 h1{
 	font-size: 55px;
 }
@@ -22,45 +16,46 @@ h1{
 }
 
 #search{
-	background: #FCE4DC;
+	background: #FBDBD0;
 	text-align: center;
 	padding: 20px;
 }
 
-#searchTerm{
+.searchBar{
 	width: 60%;
-	border-top: 55px;
-	height: 35px;
-	border: 2px solid #12A158;
+	margin: 0 auto;
+}
+
+#searchTerm{
+	border-color: #12A158 ;
+	border-radius: 0;
+	border: 2px solid #12A158 ;
 }
 
 #searchTerm:focus{
-	outline: 0;
-	border-color: #33A96D ;
-    /*box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(230, 74, 25, 0.9);}*/
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(8, 127, 67, 0.6);
+	outline: none;
+	border: 2px solid #56BE89 !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(51, 169, 109, 0.6) !important;
 }
 
 #searchButton{
-	display: inline-block;
 	color: #fff;
 	background-color: #12A158;
-	height: 35px;
-	width: 40px;
-	vertical-align: bottom;
-	text-align: center;
-	cursor: pointer;
-	font-size: 15px;
+	border-radius: 0;
 }
 
-#searchButton:active{
-	box-shadow:rgba(255, 255, 255, 0.498039) 0px 0px 0px 1px inset;
+#searchButton:focus{
+	  outline: none;
 }
 
-/*adjusts icon font in button*/
-#searchButton .centerVert{
-	top: 45%;
+.simplebox {
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }
+
 
 
 

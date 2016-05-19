@@ -21,37 +21,32 @@
 <body>
 
 <div class="container">
+
 	<!-- Header -->
 	<div class="row">
-		<div class="col-md-12 title">
+		<div class="col-xs-12 title">
 			<div class="text-center">
 				<h1>Wikipedia Viewer</h1>
 			</div>
 		</div>
 	</div>	
 
-
 	<!-- Search Bar -->
 	<div class="row">
 		<div id="search" class="col-md-12">
-			<input id="searchTerm" type="text" name="searchTerm">
-		    <div id="searchButton"> <span class="glyphicon glyphicon-search centerVert" aria-hidden="true"></span></div>
-		    	<div class="input-group">
-				
-				<!-- bootstrap use this -->
-  				<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-  				<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-  				
-				</div>
+			<div class="input-group searchBar">
+				<input id="searchTerm" type="text" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+			    	<button id="searchButton" class="btn" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			  	</span>
+			</div>
 		</div>
 	</div>
+
 
 	<!-- Results -->
 	<div class="row">
 		<div class="col-md-12">
-			<div>
-				Results
-			</div>
 		</div>
 	</div>		
 			
