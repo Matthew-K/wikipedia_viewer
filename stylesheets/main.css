@@ -67,6 +67,15 @@ h1{
 
 /*Results*/
 /*--------------------------*/
+a{
+	color: #087F43;
+}
+
+#random{
+	text-align: center;
+	background: #fff;
+	padding: 12px 0;
+}
 
 #results{
 	background: #fff;
@@ -83,13 +92,6 @@ h1{
 .result:last-child{
 	border-bottom: 0;
 }
-
-#results a{
-	color: #087F43;
-	font-weight:;
-}
-
-
 
 /*Footer*/
 /*--------------------------*/
