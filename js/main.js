@@ -56,10 +56,12 @@ var controller= {
 var view = {
 
 	init: function(){
-		this.createSearchHandler();
+		this.searchByButton();
+		this.searchByEnter();
 	},
 
-	createSearchHandler: function(){
+	// creates search button click handler
+	searchByButton: function(){
 		$("#searchButton").on("click",function(){
 			// find the search term
 			var searchTerm = $("#searchTerm").val();
@@ -67,6 +69,16 @@ var view = {
 			controller.search(searchTerm);
 			// removes previous search results
 			$(".result").remove();
+		});
+	},
+	
+	// creates "enter" keypress handler
+	searchByEnter: function(){
+		$('#searchTerm').keypress(function(e){ 		
+	    	var keyCode = e.which;
+	    	if (keyCode === 13) {
+	       	   $('#searchButton').trigger('click');
+	    	}
 		});
 	},
 
